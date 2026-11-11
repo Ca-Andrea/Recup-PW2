@@ -1,0 +1,87 @@
+/* Fondo general de la página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+}
+
+/* Formulario */
+form {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+/* Etiquetas */
+form label {
+  color: #3b1e3a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Campos de texto y correo */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+/* Efecto al seleccionar un campo */
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  background-color: #ffffff;
+}
+
+/* Área del mensaje */
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Botón Enviar */
+form input[type="submit"] {
+  margin-top: 15px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background-color: #f838de;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+form input[type="submit"]:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+/* Adaptación a celulares */
+@media (max-width: 500px) {
+  form {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+}
